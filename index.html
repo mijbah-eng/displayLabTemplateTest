@@ -1,0 +1,1118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google font-->
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Anton&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Oswald:wght@200&family=Shrikhand&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Carter+One&family=Oswald:wght@200&family=Shrikhand&display=swap" rel="stylesheet"
+        
+        <!-- Font Awesome-->
+        <link rel="stylesheet" type="text/css" href="https://displaylab.net/directory_template/assets/css/fontawesome.css">
+        <!-- Flag icon-->
+        
+        <!-- Bootstrap css-->
+        <link rel="stylesheet" type="text/css" href="https://displaylab.net/directory_template/assets/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="https://displaylab.net/directory_template/assets/css/slick-slider.css">
+        
+        <!-- <link rel="stylesheet" type="text/css" href="./admin.css"> -->
+		<link rel="stylesheet" href="./responsive.css">
+        <style>
+            .loader{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: fixed;
+            z-index: 999;
+            margin: 0px auto;
+            background: #00000059;
+            width: 100%;
+            }
+            
+            .loader span{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #03a9f4;
+            margin: 0 10px;
+            }
+            
+            .loader span:nth-child(1){
+            animation: 1s jump infinite ease-in-out;
+            }
+            
+            .loader span:nth-child(2){
+            animation: 1s 0.333s jump infinite ease-in-out;
+            }
+            
+            .loader span:nth-child(3){
+            animation: 1s 0.667s jump infinite ease-in-out;
+            }
+            
+            @keyframes jump{
+            0%{
+            transform: translateY(0) scale(1);
+            }
+            30%{
+            transform: translateY(-20px) scale(1.2);
+            }
+            75%{
+            transform: translateY(0) scale(1);
+            }
+            
+            } 
+            .htilr{color: #000000;}
+            .fontx{color: #000000;}
+            .fontx1{color: #000000;}
+            .fontx2{color: #000000 !important;}
+			
+		</style>
+	</head>
+    
+    <body>
+        <div class="loader" style="display:none;">
+            <span></span>
+            <span></span>
+            <span></span>
+		</div>
+        <!-- page-wrapper Start-->
+        <div class="page-wrapper">
+            <!-- Page Body Start-->
+            <div class="page-body-wrapper">
+                <div class="page-body" style="margin: 0;">
+                    <!-- Container-fluid starts-->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xl-11 xl-100 show_ctr">
+                                <form name="first_directory" id="first_directory" method="POST" >
+                                    <div class="card temp_bg " id="ctr" style="margin: 0px auto;background-color:#f1ede4;">
+                                            <div class="col-xl-12" style="padding: 0px;position:relative;background-size: cover !important;background-position: right;background:url('https://displaylab.net/directory_template/assets/images/menu/');" id="vid-el2">
+											  <div class="card-body slide_show content" id="content-1" style="padding:0px;">
+                                                
+												<div class="main">
+													<div class="header-content">
+														<div class="header_input_left">
+															<input class="htilr" name="head_1" id="head_1" value="BEST PARTY WINGS|" >
+															<input class="htilr" name="head_4" id="head_4" value="BONELESS WINGS" >
+															
+													    <label class="chicken_burger">
+                                                                    <input type="file" id="chicken_btn1" name="chicken_file1" class="hidden" onchange="document.getElementById('chicken_img1').src = window.URL.createObjectURL(this.files[0])">
+                                                                    <img src="./img/Logo.png" id="chicken_img1" class="icon_img">
+                                                        </label>
+														</div>
+														
+														
+
+																<div class="header_input_right">
+														<input class="htilr" name="head_2" id="head_2" value="WHOLE WINGE" >
+																</div>
+													</div>
+
+													<div class="food_menu">
+														<div class="fm_left">
+															<div class="pc_board">
+																<div class="pc_board_wrapper">
+															<div class="pc_col">
+																<div class="pc_row">
+																<div class="flex justify-between text-2xl pb-2 text-white font-semibold ">
+                                                                    <input type="text" class="pc textx" value="5 PC" name="text_1" id="text_1">
+                                                                    <input type="text" value="$ 7.49" class="pc textx" name="price_1" id="price_1">
+                                                                </div>
+																</div>
+																<div class="pc_row">
+																	<div class="flex justify-between text-2xl pb-2 text-white font-semibold ">
+                                                                    <input type="text" class="pc textx" value="5 PC" name="text_2" id="text_2">
+                                                                    <input type="text" value="$ 7.49" class="pc textx" name="price_2" id="price_2">
+                                                                </div>
+																</div>
+																
+															</div>
+															<div class="pc_col">
+																<div class="pc_col">
+																	<div class="flex justify-between text-2xl pb-2 text-white font-semibold ">
+                                                                    <input type="text" class="pc textx" value="10 PC" name="text_3" id="text_3">
+                                                                    <input type="text" value="$ 14.49" class="pc textx" name="price_3" id="price_3">
+                                                                </div>
+																</div>
+																<div class="pc_col">
+																	<div class="flex justify-between text-2xl pb-2 text-white font-semibold ">
+                                                                    <input type="text" class="pc textx" value="10 PC" name="text_4" id="text_4">
+                                                                    <input type="text" value="$ 14.49" class=" pc textx" name="price_4" id="price_4">
+                                                                </div>
+																</div>
+																
+															</div>
+															<div class="pc_col">
+																<div class="pc_col">
+																	<div class="flex justify-between text-2xl pb-2 text-white font-semibold ">
+                                                                    <input type="text" class="pc textx" value="15 PC" name="text_5" id="text_5">
+                                                                    <input type="text" value="$ 14.49" class=" pc textx" name="price_5" id="price_5">
+                                                                </div>
+																</div>
+																<div class="pc_col">
+																	<div class="flex justify-between text-2xl pb-2 text-white font-semibold ">
+                                                                    <input type="text" class="pc textx" value="15 PC" name="text_6" id="text_6">
+                                                                    <input type="text" value="$ 14.49" class="pc textx" name="price_6" id="price_6">
+                                                                </div>
+																</div>
+																
+															</div>
+															
+															<div class="combo">
+																<div class="combo_wrapper">
+																	<div class="combo_content">
+																	 <input type="text" class="combo_content_bold textx" value="Make it Combo" name="text_7" id="text_7">
+																	 <input type="text" class="combo_content_color" value="With fries & can drink" name="text_8" id="text_8">
+																</div>
+																<div class="combo_price_wrapper">
+																	<div class="combo_price_main">
+                                                                        <input type="text" class="combo_price textx" value="$ 3.99" name="text_9" id="text_9">
+																	</div>
+																	
+																</div>
+																</div>
+															</div>
+															<div class="absoluteimg">
+															<label class="wings_1">
+                                                                    <input type="file" id="wings_btn1" name="wings_file1" class="hidden" onchange="document.getElementById('wings_1_img').src = window.URL.createObjectURL(this.files[0])">
+                                                                    <img src="./img/Wings_1.png" id="wings_1_img" class="icon_img">
+                                                                </label>
+															</div>
+															<!-- <div class="absoluteimg2">
+															<label class="wings_1 wings_2">
+                                                                    <input type="file" id="wings_btn2" name="wings_file2" class="hidden" onchange="document.getElementById('wings_2_img').src = window.URL.createObjectURL(this.files[0])">
+                                                                    <img src="./img/Wings_2.png" id="wings_2_img" class="icon_img">
+                                                                </label>
+															</div> -->
+															
+														</div>
+															</div>
+														
+
+														<div class="wings_Serve">
+															<input
+																type="text"
+																class="label"
+																name="label_1"
+																id="label_1"
+																value="All Wings Serve I sauce per 5pc"
+															/>
+															<input
+																type="text"
+																class="label"
+																name="label_2"
+																id="label_2"
+																value="(Extra sauce 0.50 dressing 0.50)"
+															/>
+															<input
+																type="text"
+																class="label"
+																name="label_3"
+																id="label_3"
+																value="(All drum or flat extra 0.20 per pc,limit 10)"
+															/>
+														</div>
+															
+														</div>
+														
+														<div class="fm_right">
+															<div class="pc_board pc_board2">
+															<div class="pc_board_wrapper2">
+														<div class="pc_col">
+																<div class="pc_row">
+																	<div class="flex justify-between text-2xl pb-2 text-white font-semibold ">
+                                                                    <input type="text" class="pc pc2 textx" value="3 PC SHRIMP" name="text_10" id="text_7">
+                                                                    <input type="text" value="$ 7.49" class="pc pc2 textx" name="price_7" id="price_7">
+                                                                </div>
+																</div>
+																
+																
+															</div>
+															<div class="pc_col">
+																<div class="pc_row">
+																	<div class="flex justify-between text-2xl pb-2 text-white font-semibold">
+                                                                    <input type="text" class="pc pc2 textx" value="5 PC SHRIMP" name="text_11" id="text_11">
+                                                                    <input type="text" value="$ 14.49" class="pc pc2 textx" name="price_8" id="price_8">
+                                                                </div>
+																</div>
+																
+																
+															</div>
+															
+															
+															<div class="pc_col">
+																<div class="pc_row">
+																	<div class="flex justify-between text-2xl pb-2 text-white font-semibold ">
+                                                                    <input type="text" class="pc pc2 textx" value="10 PC SHRIMP" name="text_12" id="text_12">
+                                                                    <input type="text" value="$ 14.49" class="pc pc2 textx" name="price_9" id="price_9">
+                                                                </div>
+																</div>
+																
+																
+															</div><div class="combo">
+																<div class="combo_wrapper">
+																	<div class="combo_content">
+																	 <input type="text" class="combo_content_bold textx" value="Make it Combo" name="text_13" id="text_13">
+																	 <input type="text" class="combo_content_color" value="With fries &amp; can drink" name="text_14" id="text_14">
+																</div>
+																<div class="combo_price_wrapper">
+																	<div class="combo_price_main">
+                                                                        <input type="text" class="combo_price textx" value="$ 3.99" name="price_10" id="price_10">
+																	</div>
+																	
+																</div>
+																</div>
+															</div>
+															<div class="absoluteimg3">
+
+															<label class="wings_3">
+                                                                    <input type="file" id="wings_btn3" name="wings_file3" class="hidden" onchange="document.getElementById('wings_3_img').src = window.URL.createObjectURL(this.files[0])">
+                                                                    <img src="./img/Wings_2.png" id="wings_3_img" class="icon_img">
+                                                                </label>
+															
+															</div>
+														</div>
+														</div>
+														</div>
+													</div>
+
+													<div class="wings_flavors">
+														<div class="wings_title">
+															<input
+																type="text"
+																class="htilr"
+																name="head_3"
+																id="head_3"
+																value="Wings Flavors"
+															/>
+														</div>
+														<div class="menu_items">
+															<div class="menu_items_wrapper">
+																<div class="menu_items_single">
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_15"
+																	id="text_15"
+																	value="MILD"
+																/>
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_16"
+																	id="text_16"
+																	value="BBQ"
+																/>
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_17"
+																	id="text_17"
+																	value="HOT"
+																/>
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_18"
+																	id="text_18"
+																	value="BBQ HOT"
+																/>
+																</div>
+																<div class="menu_items_single">
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_19"
+																	id="text_19"
+																	value="TERIYAKI"
+																/>
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_20"
+																	id="text_20"
+																	value="HONEY BBQ"
+																/>
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_21"
+																	id="text_21"
+																	value="HONEY"
+																/>
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_22"
+																	id="text_22"
+																	value="GARLIC"
+																/>
+																</div>
+																<div class="menu_items_single">
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_23"
+																	id="text_23"
+																	value="CHIPOTLE BBQ"
+																/>
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_24"
+																	id="text_24"
+																	value="HONEY"
+																/>
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_25"
+																	id="text_25"
+																	value="MUSTARD"
+																/>
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_26"
+																	id="text_26"
+																	value="MOON DUST"
+																/>
+																</div>
+																<div class="menu_items_single">
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_27"
+																	id="text_27"
+																	value="OLD BAY"
+																/>
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_28"
+																	id="text_28"
+																	value="CAJUN"
+																/>
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_29"
+																	id="text_29"
+																	value="GARLIC PARMESAN"
+																/>
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_30"
+																	id="text_30"
+																	value="HONEY LEMON"
+																/>
+																</div>
+																<div class="menu_items_single">
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_31"
+																	id="text_31"
+																	value="GARLIC PEPPER"
+																/>
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_32"
+																	id="text_32"
+																	value="HONEY HOT"
+																/>
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_33"
+																	id="text_33"
+																	value="LEMON PEPPER"
+																/>
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_34"
+																	id="text_34"
+																	value="EXTRA HOT"
+																/>
+																</div>
+																<div class="menu_items_single">
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_35"
+																	id="text_35"
+																	value="JAMAICAN JERK"
+																/>
+																<input
+																	type="text"
+																	class="product1 fontx textx"
+																	name="text_36"
+																	id="text_36"
+																	value="THAI CHILI"
+																/>
+																
+																</div>
+																
+															</div>
+														</div>
+													</div>
+												</div>
+												<div style="clear:both;"></div>
+											</div>
+										
+										</div>
+										
+										
+										
+										<div style="clear:both;"></div>
+                                        <input type="hidden" name="page_no" id="page_no" value="3" />
+                                        <input type="hidden" name="template" id="template" value="27" />
+										
+									</div>
+								</form>
+								
+							</div>
+                            
+						</div>
+                        <!-- Container-fluid Ends-->
+					</div>
+                    
+                    
+				</div>
+                
+			</div>
+            <!--<p id="show_all"></p>-->
+            <!-- latest jquery-->
+            <script src="https://displaylab.net/directory_template/assets/js/jquery-3.3.1.min.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+            <script>
+                var vidChangeBtn2 = document.getElementById("vid-change-btn2");
+                var vidE3 = document.getElementById("vid-el2");
+                vidChangeBtn2.addEventListener("change", function () {
+					var file2 = this.files[0];
+					// console.log(file);
+					// vidEl.style.background = URL.createObjectURL(file);
+					vidE3.style.background = "url("+URL.createObjectURL(file2)+")";
+					vidE3.style.backgroundSize = "cover";
+					vidE3.style.backgroundPosition = "right";
+				});
+                jQuery(document).ready(function($) {
+											$('#img-preview-parent-1').slick({
+							dots: false,
+							infinite: true,
+							speed: 3500,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							autoplay: true,
+							fade: true,
+							autoplaySpeed: 5000,
+							pauseOnHover:true,
+							arrows: false,
+							responsive: [{
+								breakpoint: 600,
+								settings: {
+									slidesToShow: 2,
+									slidesToScroll: 1
+								}
+							},
+							{
+								breakpoint: 400,
+								settings: {
+									arrows: false,
+									slidesToShow: 1,
+									slidesToScroll: 1
+								}
+							}]
+						});
+											$('#img-preview-parent-2').slick({
+							dots: false,
+							infinite: true,
+							speed: 3500,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							autoplay: true,
+							fade: true,
+							autoplaySpeed: 5000,
+							pauseOnHover:true,
+							arrows: false,
+							responsive: [{
+								breakpoint: 600,
+								settings: {
+									slidesToShow: 2,
+									slidesToScroll: 1
+								}
+							},
+							{
+								breakpoint: 400,
+								settings: {
+									arrows: false,
+									slidesToShow: 1,
+									slidesToScroll: 1
+								}
+							}]
+						});
+											$('#img-preview-parent-3').slick({
+							dots: false,
+							infinite: true,
+							speed: 3500,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							autoplay: true,
+							fade: true,
+							autoplaySpeed: 5000,
+							pauseOnHover:true,
+							arrows: false,
+							responsive: [{
+								breakpoint: 600,
+								settings: {
+									slidesToShow: 2,
+									slidesToScroll: 1
+								}
+							},
+							{
+								breakpoint: 400,
+								settings: {
+									arrows: false,
+									slidesToShow: 1,
+									slidesToScroll: 1
+								}
+							}]
+						});
+											$('#img-preview-parent-4').slick({
+							dots: false,
+							infinite: true,
+							speed: 3500,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							autoplay: true,
+							fade: true,
+							autoplaySpeed: 5000,
+							pauseOnHover:true,
+							arrows: false,
+							responsive: [{
+								breakpoint: 600,
+								settings: {
+									slidesToShow: 2,
+									slidesToScroll: 1
+								}
+							},
+							{
+								breakpoint: 400,
+								settings: {
+									arrows: false,
+									slidesToShow: 1,
+									slidesToScroll: 1
+								}
+							}]
+						});
+											$('#img-preview-parent-5').slick({
+							dots: false,
+							infinite: true,
+							speed: 3500,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							autoplay: true,
+							fade: true,
+							autoplaySpeed: 5000,
+							pauseOnHover:true,
+							arrows: false,
+							responsive: [{
+								breakpoint: 600,
+								settings: {
+									slidesToShow: 2,
+									slidesToScroll: 1
+								}
+							},
+							{
+								breakpoint: 400,
+								settings: {
+									arrows: false,
+									slidesToShow: 1,
+									slidesToScroll: 1
+								}
+							}]
+						});
+											$('#img-preview-parent-6').slick({
+							dots: false,
+							infinite: true,
+							speed: 3500,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							autoplay: true,
+							fade: true,
+							autoplaySpeed: 5000,
+							pauseOnHover:true,
+							arrows: false,
+							responsive: [{
+								breakpoint: 600,
+								settings: {
+									slidesToShow: 2,
+									slidesToScroll: 1
+								}
+							},
+							{
+								breakpoint: 400,
+								settings: {
+									arrows: false,
+									slidesToShow: 1,
+									slidesToScroll: 1
+								}
+							}]
+						});
+											$('#img-preview-parent-7').slick({
+							dots: false,
+							infinite: true,
+							speed: 3500,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							autoplay: true,
+							fade: true,
+							autoplaySpeed: 5000,
+							pauseOnHover:true,
+							arrows: false,
+							responsive: [{
+								breakpoint: 600,
+								settings: {
+									slidesToShow: 2,
+									slidesToScroll: 1
+								}
+							},
+							{
+								breakpoint: 400,
+								settings: {
+									arrows: false,
+									slidesToShow: 1,
+									slidesToScroll: 1
+								}
+							}]
+						});
+											$('#img-preview-parent-8').slick({
+							dots: false,
+							infinite: true,
+							speed: 3500,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							autoplay: true,
+							fade: true,
+							autoplaySpeed: 5000,
+							pauseOnHover:true,
+							arrows: false,
+							responsive: [{
+								breakpoint: 600,
+								settings: {
+									slidesToShow: 2,
+									slidesToScroll: 1
+								}
+							},
+							{
+								breakpoint: 400,
+								settings: {
+									arrows: false,
+									slidesToShow: 1,
+									slidesToScroll: 1
+								}
+							}]
+						});
+											$('#img-preview-parent-9').slick({
+							dots: false,
+							infinite: true,
+							speed: 3500,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							autoplay: true,
+							fade: true,
+							autoplaySpeed: 5000,
+							pauseOnHover:true,
+							arrows: false,
+							responsive: [{
+								breakpoint: 600,
+								settings: {
+									slidesToShow: 2,
+									slidesToScroll: 1
+								}
+							},
+							{
+								breakpoint: 400,
+								settings: {
+									arrows: false,
+									slidesToShow: 1,
+									slidesToScroll: 1
+								}
+							}]
+						});
+											$('#img-preview-parent-10').slick({
+							dots: false,
+							infinite: true,
+							speed: 3500,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							autoplay: true,
+							fade: true,
+							autoplaySpeed: 5000,
+							pauseOnHover:true,
+							arrows: false,
+							responsive: [{
+								breakpoint: 600,
+								settings: {
+									slidesToShow: 2,
+									slidesToScroll: 1
+								}
+							},
+							{
+								breakpoint: 400,
+								settings: {
+									arrows: false,
+									slidesToShow: 1,
+									slidesToScroll: 1
+								}
+							}]
+						});
+											$('#img-preview-parent-11').slick({
+							dots: false,
+							infinite: true,
+							speed: 3500,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							autoplay: true,
+							fade: true,
+							autoplaySpeed: 5000,
+							pauseOnHover:true,
+							arrows: false,
+							responsive: [{
+								breakpoint: 600,
+								settings: {
+									slidesToShow: 2,
+									slidesToScroll: 1
+								}
+							},
+							{
+								breakpoint: 400,
+								settings: {
+									arrows: false,
+									slidesToShow: 1,
+									slidesToScroll: 1
+								}
+							}]
+						});
+											$('#img-preview-parent-12').slick({
+							dots: false,
+							infinite: true,
+							speed: 3500,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							autoplay: true,
+							fade: true,
+							autoplaySpeed: 5000,
+							pauseOnHover:true,
+							arrows: false,
+							responsive: [{
+								breakpoint: 600,
+								settings: {
+									slidesToShow: 2,
+									slidesToScroll: 1
+								}
+							},
+							{
+								breakpoint: 400,
+								settings: {
+									arrows: false,
+									slidesToShow: 1,
+									slidesToScroll: 1
+								}
+							}]
+						});
+											$('#img-preview-parent-13').slick({
+							dots: false,
+							infinite: true,
+							speed: 3500,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							autoplay: true,
+							fade: true,
+							autoplaySpeed: 5000,
+							pauseOnHover:true,
+							arrows: false,
+							responsive: [{
+								breakpoint: 600,
+								settings: {
+									slidesToShow: 2,
+									slidesToScroll: 1
+								}
+							},
+							{
+								breakpoint: 400,
+								settings: {
+									arrows: false,
+									slidesToShow: 1,
+									slidesToScroll: 1
+								}
+							}]
+						});
+											$('#img-preview-parent-14').slick({
+							dots: false,
+							infinite: true,
+							speed: 3500,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							autoplay: true,
+							fade: true,
+							autoplaySpeed: 5000,
+							pauseOnHover:true,
+							arrows: false,
+							responsive: [{
+								breakpoint: 600,
+								settings: {
+									slidesToShow: 2,
+									slidesToScroll: 1
+								}
+							},
+							{
+								breakpoint: 400,
+								settings: {
+									arrows: false,
+									slidesToShow: 1,
+									slidesToScroll: 1
+								}
+							}]
+						});
+											$('#img-preview-parent-15').slick({
+							dots: false,
+							infinite: true,
+							speed: 3500,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							autoplay: true,
+							fade: true,
+							autoplaySpeed: 5000,
+							pauseOnHover:true,
+							arrows: false,
+							responsive: [{
+								breakpoint: 600,
+								settings: {
+									slidesToShow: 2,
+									slidesToScroll: 1
+								}
+							},
+							{
+								breakpoint: 400,
+								settings: {
+									arrows: false,
+									slidesToShow: 1,
+									slidesToScroll: 1
+								}
+							}]
+						});
+									});
+			</script>
+            <script>
+                /*  $(function() {
+                    $("#ctr").width(768).height(432);
+				}); */
+                $(document).ready(function() {
+                    $(window).resize(function() {
+                        $('#ctr').width();
+                        $('#ctr').height();
+					});
+				});
+                (function($) {
+                    $.fn.textfill = function(options) {
+                        var fontSize = options.maxFontPixels;
+                        var ourText = $('span:visible:first', this);
+                        var maxHeight = $(this).height();
+                        var maxWidth = $(this).width();
+                        var textHeight;
+                        var textWidth;
+                        do {
+                            ourText.css('font-size', fontSize);
+                            textHeight = ourText.height();
+                            textWidth = ourText.width();
+                            fontSize = fontSize - 1;
+						} while ((textHeight > maxHeight || textWidth > maxWidth) && fontSize > 3);
+                        return this;
+					}
+				})(jQuery);
+                
+                $(document).ready(function() {
+                    $('.big_number').textfill({ maxFontPixels: 200 });
+				});
+			</script>
+            <script>
+                /* function save_date()
+                    {
+                    var form = $('#first_directory')[0]; // You need to use standard javascript object here
+                    var formData = new FormData(form);
+                    for(let i = 1; i <=3; i++) 
+                    {
+                    formData.append('head_'+i, $('#head_'+i).html());
+                    }
+                    for(let a = 1; a <=36; a++) 
+                    {
+                    formData.append('floor_'+a, $('#floor_'+a).html());
+                    }
+                    for(let b = 1; b <=36; b++) 
+                    {
+                    formData.append('text_'+b, $('#text_'+b).html());
+                    }
+                    $.ajax({
+                    type: "POST",
+                    url: 'third-directory-form.php',
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    data: formData, // serializes the form's elements.
+                    success: function(data)
+                    {
+                    // alert(data); // show response from the php script.
+                    // $('#show_all').html(data);
+                    alert("Directory has been saved successfully!");
+                    window.location.href = "../user_templates.php";
+                    }
+                    });
+				} */
+                function save_date()
+                {
+                    $('.loader').show();
+                    var form = $('#first_directory')[0]; // You need to use standard javascript object here
+                    var formData = new FormData(form);
+                    /* for(let i = 1; i <=3; i++) 
+                        {
+                        formData.append('lebel_'+i, $('#lebel_'+i).html());
+                        }
+                        for(let a = 1; a <=21; a++) 
+                        {
+                        formData.append('price_'+a, $('#price_'+a).html());
+                        }
+                        for(let b = 1; b <=21; b++) 
+                        {
+                        formData.append('text_'+b, $('#text_'+b).html());
+					} */
+                    $.ajax({
+                        type: "POST",
+                        url: 'https://displaylab.net/Template/insertresturantMenu',
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        data: formData, // serializes the form's elements.
+                        success: function(data)
+                        {
+                            $('.loader').hide();
+                            // alert(data); // show response from the php script.
+							//$('#show_all').html(data);
+                            									alert("Directory has been saved successfully!");
+																window.parent.location.href = "https://displaylab.net/savedtemplates";
+													}
+					});
+				}
+                
+			</script>
+            <script>
+                function get_heading_color(val)
+                {
+                    $('.htilr').css('color', val);
+				}
+                function get_title_color(val)
+                {
+                    $('.textx').css('color', val);
+				}
+                function get_label_color(val)
+                {
+                    $('.label').css('color', val);
+				}
+                function get_price_color(val)
+                {
+                    $('.fontx2').attr('style', 'color: '+ val +' !important');
+				}
+				function get_back_color(val)
+                {
+                    $('#vid-el2').attr('style', 'background: '+ val +' !important');
+				}
+			</script>
+            <script>
+                function slickCarousel(id) {
+                    $(id).slick({
+                        dots: false,
+                        infinite: true,
+                        speed: 3500,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+						fade: true,
+                        autoplaySpeed: 5000,
+                        pauseOnHover:true,
+                        arrows: false,
+                        responsive: [{
+                            breakpoint: 600,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1
+							}
+						},
+                        {
+                            breakpoint: 400,
+                            settings: {
+                                arrows: false,
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+							}
+						}]
+					});
+				}
+                function destroyCarousel(id) {
+                    
+                    if ($(id).hasClass('slick-initialized')) {
+                        $(id).slick('destroy');
+					}      
+				}
+                function myfunction(image_id,image_name,id) {
+                    //  var formData = new FormData(theForm);
+                    //var form = new FormData();
+                    //alert(id);
+                    var names = [];
+                    for (var i = 0; i < $('#'+image_name).get(0).files.length; ++i) {
+                        // var  namess = $("input[name=image1]").get(0).files[i].name;
+                        var blob_url= URL.createObjectURL($('#'+image_name).get(0).files[i]);
+                        names.push(blob_url);
+                        
+					}
+                    $.ajax({      
+                        type: 'POST',
+                        url: 'https://displaylab.net/Template/getlogo',
+                        data: {names : names, id : id},
+                        success: function (data) { 
+                            // alert(data);
+                            destroyCarousel('#'+image_id);
+                            
+                            $('#'+image_id).html(data); 
+                            slickCarousel('#'+image_id);
+                            
+                            
+						}
+					}) 
+				}
+			</script>
+            <!-- Bootstrap js-->
+            <script src="https://displaylab.net/directory_template/assets/js/popper.min.js"></script>
+            <script src="https://displaylab.net/directory_template/assets/js/bootstrap.js"></script>
+            
+            <!--script admin-->
+            <script src="https://displaylab.net/directory_template/assets/js/slick-slider.js"></script>
+            
+            <!--script admin-->
+            <script src="./admin-script.js"></script>
+            
+		</body>
+        
+	</html>
